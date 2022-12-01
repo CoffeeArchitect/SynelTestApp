@@ -1,0 +1,10 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using SynelTestApp.DAL.Interfaces;
+global using Microsoft.AspNetCore.Http;
+global using SynelTestApp.BLL.Mappers;
+global using SynelTestApp.DAL.Models;
+global using CsvHelper.Configuration;
+global using SynelTestApp.BLL.Data;
+global using System.Globalization;
+global using System.Text;
+global using CsvHelper;

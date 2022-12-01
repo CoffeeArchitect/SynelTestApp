@@ -1,0 +1,12 @@
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\bin\Debug\net7.0\SynelTestApp.DAL.deps.json
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\bin\Debug\net7.0\SynelTestApp.DAL.dll
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\bin\Debug\net7.0\SynelTestApp.DAL.pdb
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\SynelTestApp.DAL.csproj.AssemblyReference.cache
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\SynelTestApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\SynelTestApp.DAL.AssemblyInfoInputs.cache
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\SynelTestApp.DAL.AssemblyInfo.cs
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\SynelTestApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\SynelTestApp.DAL.dll
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\refint\SynelTestApp.DAL.dll
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\SynelTestApp.DAL.pdb
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.DAL\obj\Debug\net7.0\ref\SynelTestApp.DAL.dll

@@ -1,0 +1,12 @@
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\bin\Debug\net7.0\SynelTestApp.BLL.deps.json
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\bin\Debug\net7.0\SynelTestApp.BLL.dll
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\bin\Debug\net7.0\SynelTestApp.BLL.pdb
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\SynelTestApp.BLL.csproj.AssemblyReference.cache
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\SynelTestApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\SynelTestApp.BLL.AssemblyInfoInputs.cache
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\SynelTestApp.BLL.AssemblyInfo.cs
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\SynelTestApp.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\SynelTestApp.BLL.dll
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\refint\SynelTestApp.BLL.dll
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\SynelTestApp.BLL.pdb
+C:\Users\Sergey\Documents\LabWork\SynelTestApp\SynelTestApp.BLL\obj\Debug\net7.0\ref\SynelTestApp.BLL.dll
