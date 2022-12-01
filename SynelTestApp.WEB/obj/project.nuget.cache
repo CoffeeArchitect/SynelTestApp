@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7xIbUfx8G9DF5vstf8z0FWUctVVTUsUuXMM0qo5lon77cg5Yx7Q2GXgW7/P/8KW3+On+Rt6k9w+DpT2fvD7Oug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sergey\\Documents\\LabWork\\SynelTestApp\\SynelTestApp.WEB\\SynelTestApp.WEB.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sergey\\.nuget\\packages\\nonfactors.grid.core.mvc6\\7.1.0\\nonfactors.grid.core.mvc6.7.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
