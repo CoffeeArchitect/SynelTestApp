@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "V15YjOippdOdtSXqMD2NS/WzWk2SptI0LHWraPq7CjicNpIPW/GzEBz41KDmIPkpMBvsnKFseTLOCzEKj/k/JQ==",
+  "dgSpecHash": "0EuEooNfCMA2t2sgT+hfm0sbC6WB7bQ9OxtTaUM/m8OJjc5bgnX5ArpcoWMQgUZNB8d7PIgGK9vRvFyMSAX2Sg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sergey\\Documents\\LabWork\\SynelTestApp\\SynelTestApp.BLL\\SynelTestApp.BLL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sergey\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Sergey\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Sergey\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Sergey\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Sergey\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
@@ -13,7 +15,7 @@
     "C:\\Users\\Sergey\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Sergey\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\Sergey\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\Sergey\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Sergey\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Sergey\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "C:\\Users\\Sergey\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "C:\\Users\\Sergey\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",

@@ -1,14 +1,16 @@
-﻿
-namespace SynelTestApp.BLL.Repositories
+﻿namespace SynelTestApp.BLL.Repositories
 {
     public class Repository : IRepository
     {
         private readonly EmployeeDbContext _context;
+        private readonly IMapper _mapper;
 
-        public Repository(EmployeeDbContext context)
+        public Repository(EmployeeDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
+
 
         // Get Employees
         public async Task<IEnumerable<Employee>> GetAll()
@@ -16,10 +18,10 @@ namespace SynelTestApp.BLL.Repositories
             return await _context.Employees.ToListAsync();
         }
 
-        //Get by id
+        // Get by id
         public async Task<Employee> GetEmployee(int id)
         {
-            return await _context.Employees?
+            return await _context.Employees
                 .FirstOrDefaultAsync(e => e.Id == id);
         }
 
@@ -68,6 +70,13 @@ namespace SynelTestApp.BLL.Repositories
                 _context.Employees.Remove(result);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        public async Task<IEnumerable<EmployeeDto>> GetAllAsync()
+        {
+            return await _context.Employees
+                .ProjectTo<EmployeeDto>(_mapper.ConfigurationProvider)
+                .ToListAsync();
         }
     }
 }

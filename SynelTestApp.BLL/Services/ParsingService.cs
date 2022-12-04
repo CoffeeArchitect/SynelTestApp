@@ -1,23 +1,23 @@
 ﻿namespace SynelTestApp.BLL.Services
 {
-    internal class ParsingService : IParsingService
+    public class ParsingService : IParsingService
     {
-        public List<Employee> ReadFromFile(IFormFile csvFile)
+        public List<Employee> ReadFromFile(IFormFile file)
         {
             try
             {
-                using (var streamReader = new StreamReader(csvFile.OpenReadStream(), Encoding.Default))
-                using (var csvReader = new CsvReader(streamReader, new CultureInfo("en-GB"))) //Used CultureInfo("en-GB") for "dd/MM/yyyy" template
+                using (var streamReader = new StreamReader(file.OpenReadStream(), Encoding.Default))
+                using (var fileReader = new CsvReader(streamReader, new CultureInfo("en-GB")))
                 {
-                    csvReader.Context.RegisterClassMap<AppEmployeeMapping>();
+                    fileReader.Context.RegisterClassMap<AppEmployeeMapping>();
                     var employeeRecords = new List<Employee>();
 
-                    csvReader.Read();
-                    csvReader.ReadHeader();
+                    fileReader.Read();
+                    fileReader.ReadHeader();
 
-                    while (csvReader.Read())
+                    while (fileReader.Read())
                     {
-                        employeeRecords.Add(csvReader.GetRecord<Employee>());
+                        employeeRecords.Add(fileReader.GetRecord<Employee>());
                     }
                     return employeeRecords;
                 }

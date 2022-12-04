@@ -1,1 +1,59 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Employee Page";
+}
+
+
+@{
+    List<object> cols = new List<object>();
+
+    List<object> commands = new List<object>();
+    commands.Add(new { type = "Edit", buttonOption = new { iconCss = "e-icons e-edit", cssClass = "e-flat" } });
+    commands.Add(new { type = "Delete", buttonOption = new { iconCss = "e-icons e-delete", cssClass = "e-flat" } });
+    commands.Add(new { type = "Save", buttonOption = new { iconCss = "e-icons e-update", cssClass = "e-flat" } });
+    commands.Add(new { type = "Cancel", buttonOption = new { iconCss = "e-icons e-cancel-icon", cssClass = "e-flat" } });
+
+}
+
+
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" created="created" toolbar="@(new List<string>() { "Search"})" allowSorting="true" allowPaging="true">
+    <e-grid-searchsettings fields="@(new string[] { "Forenames","Surname","SecondAddress"})"></e-grid-searchsettings>
+    <e-data-manager url="/Employee/GetData" updateUrl="/Employee/Update" removeUrl="/Employee/Delete" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-editSettings allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
+    <e-grid-sortsettings columns="cols"></e-grid-sortsettings>
+    <e-grid-columns>
+
+        <e-grid-column field="PayrollNumber" type="string" headerText="Payroll Number" validationRules="@(new { required=true})" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="Forenames" type="string" headerText="Forenames" validationRules="@(new { required=true})" width="140"></e-grid-column>
+        <e-grid-column field="Surname" type="string" headerText="Surname" validationRules="@(new { required=true})" width="140"></e-grid-column>
+        <e-grid-column field="DateOfBirth" type="date" headerText="Date of Birth" validationRules="@(new { required=true})" customFormat="@(new { type ="date", format="dd/MM/yyyy" })" editType="datepickeredit" width="120"></e-grid-column>
+        <e-grid-column field="Telephone" type="int" headerText="Telephone" validationRules="@(new { required=true})" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="Mobile" type="int" headerText="Mobile" validationRules="@(new { required=true})" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="Address" type="string" headerText="Address" validationRules="@(new { required=true})" width="140"></e-grid-column>
+        <e-grid-column field="SecondAddress" type="string" headerText="Address 2" validationRules="@(new { required=true})" width="140"></e-grid-column>
+        <e-grid-column field="Postcode" type="string" headerText="Postcode" validationRules="@(new { required=true})" width="140"></e-grid-column>
+        <e-grid-column field="Email" type="string" headerText="Email Home" validationRules="@(new { required=true})" width="140"></e-grid-column>
+        <e-grid-column field="StartDate" type="date" headerText="Start Date" validationRules="@(new { required=true})" customFormat="@(new { type ="date", format="dd/MM/yyyy" })" editType="datepickeredit" width="120"></e-grid-column>
+        <e-grid-column headerText="Actions" width="150" commands="commands"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<form method="post" enctype="multipart/form-data" asp-action="ImportCSV">
+    <div class="form-group">
+        <div class="input-group mb-3 mt-3">
+            <input type="file" name="file" class="form-control">
+            <input type="submit" value="Upload" class="form-control-sm btn btn-secondary" />
+        </div>
+
+    </div>
+    
+</form>
+
+<script>
+    function created() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        document.getElementById(grid.element.id + "_searchbar").addEventListener('keyup', () => {
+            grid.search(event.target.value)
+        });
+    }
+</script>

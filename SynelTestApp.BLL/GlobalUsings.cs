@@ -1,10 +1,13 @@
-﻿global using Microsoft.EntityFrameworkCore;
+﻿global using AutoMapper.QueryableExtensions;
+global using Microsoft.EntityFrameworkCore;
 global using SynelTestApp.DAL.Interfaces;
 global using Microsoft.AspNetCore.Http;
-global using SynelTestApp.BLL.Mappers;
+global using SynelTestApp.BLL.Helpers;
 global using SynelTestApp.DAL.Models;
 global using CsvHelper.Configuration;
 global using SynelTestApp.BLL.Data;
+global using SynelTestApp.DAL.DTOs;
 global using System.Globalization;
 global using System.Text;
+global using AutoMapper;
 global using CsvHelper;

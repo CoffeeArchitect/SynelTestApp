@@ -3,6 +3,7 @@ namespace SynelTestApp.DAL.Models;
 
 public partial class Employee
 {
+    [Key]
     public int Id { get; set; }
 
     public string? PayrollNumber { get; set; }

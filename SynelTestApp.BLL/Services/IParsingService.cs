@@ -1,5 +1,4 @@
-﻿
-namespace SynelTestApp.BLL.Services
+﻿namespace SynelTestApp.BLL.Services
 {
     public interface IParsingService
     {
