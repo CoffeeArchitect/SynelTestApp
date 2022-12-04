@@ -8,7 +8,6 @@ global using Microsoft.AspNetCore.Mvc;
 global using SynelTestApp.WEB.Models;
 global using SynelTestApp.DAL.Models;
 global using SynelTestApp.BLL.Data;
-global using System.Net.Http.Json;
 global using Syncfusion.EJ2.Base;
-global using System.Collections;
 global using System.Diagnostics;
+global using System.Collections;

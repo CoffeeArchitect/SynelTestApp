@@ -3,6 +3,7 @@ global using Microsoft.EntityFrameworkCore;
 global using SynelTestApp.DAL.Interfaces;
 global using Microsoft.AspNetCore.Http;
 global using SynelTestApp.BLL.Helpers;
+global using EntityFrameworkCoreMock;
 global using SynelTestApp.DAL.Models;
 global using CsvHelper.Configuration;
 global using SynelTestApp.BLL.Data;

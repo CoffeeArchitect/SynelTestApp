@@ -5,7 +5,7 @@
 
 @{
     List<object> cols = new List<object>();
-
+    cols.Add(new { field = "Surname", direction = "Ascending" });
     List<object> commands = new List<object>();
     commands.Add(new { type = "Edit", buttonOption = new { iconCss = "e-icons e-edit", cssClass = "e-flat" } });
     commands.Add(new { type = "Delete", buttonOption = new { iconCss = "e-icons e-delete", cssClass = "e-flat" } });
@@ -15,14 +15,15 @@
 }
 
 
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" created="created" toolbar="@(new List<string>() { "Search"})" allowSorting="true" allowPaging="true">
+<ejs-grid id="Grid" dataSource="ViewBag.dataSource" toolbar="@(new List<string>() { "Search"})" allowSorting="true" allowPaging="true">
     <e-grid-searchsettings fields="@(new string[] { "Forenames","Surname","SecondAddress"})"></e-grid-searchsettings>
+    <e-grid-loadingIndicator indicatorType="Shimmer"></e-grid-loadingIndicator>
     <e-data-manager url="/Employee/GetData" updateUrl="/Employee/Update" removeUrl="/Employee/Delete" adaptor="UrlAdaptor"></e-data-manager>
     <e-grid-editSettings allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
     <e-grid-sortsettings columns="cols"></e-grid-sortsettings>
     <e-grid-columns>
-
+        <e-grid-column field="Id" headerText="Id" type="string" isPrimaryKey="true" width="0" allowEditing="false"></e-grid-column>
         <e-grid-column field="PayrollNumber" type="string" headerText="Payroll Number" validationRules="@(new { required=true})" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="Forenames" type="string" headerText="Forenames" validationRules="@(new { required=true})" width="140"></e-grid-column>
         <e-grid-column field="Surname" type="string" headerText="Surname" validationRules="@(new { required=true})" width="140"></e-grid-column>

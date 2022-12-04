@@ -72,6 +72,7 @@
             }
         }
 
+        // Get all employee
         public async Task<IEnumerable<EmployeeDto>> GetAllAsync()
         {
             return await _context.Employees

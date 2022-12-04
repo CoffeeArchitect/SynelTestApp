@@ -1,6 +1,4 @@
-﻿
-using SynelTestApp.DAL.DTOs;
-using System.Data.Common;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace SynelTestApp.WEB.Controllers
 {
@@ -37,9 +35,9 @@ namespace SynelTestApp.WEB.Controllers
         }
 
         // Get data from database
-        public async Task<ActionResult<IEnumerable<Employee>>> GetData([FromBody] DataManagerRequest dataManagerRequest)
+        public async Task<IActionResult> GetData([FromBody] DataManagerRequest dataManagerRequest)
         {
-            IEnumerable<Employee> dataSource = await _repository.GetAll();
+            IEnumerable dataSource = await _repository.GetAll();
             var operation = new DataOperations();
 
             // Search
@@ -68,7 +66,7 @@ namespace SynelTestApp.WEB.Controllers
         }
 
         // Update
-        public async Task<ActionResult> Update([FromBody] ICRUDModel<Employee> value)
+        public async Task<ActionResult> Update([FromBody] Models.CRUDModel<Employee> value)
         {
             var position = value.value;
             await _repository.UpdateEmployee(position);
@@ -77,32 +75,13 @@ namespace SynelTestApp.WEB.Controllers
         }
 
         // Delete
-        public async Task<ActionResult> Delete([FromBody] ICRUDModel<Employee> value)
+        public async Task<ActionResult> Delete([FromBody] Models.CRUDModel<Employee> value)
         {
             await _repository.DeleteEmployeeAsync(value.key);
             return Json(value);
         }
+        
 
-        public class ICRUDModel<T> where T : class
-        {
-            public string action { get; set; }
-
-            public string table { get; set; }
-
-            public string keyColumn { get; set; }
-
-            public int key { get; set; }
-
-            public T value { get; set; }
-
-            public List<T> added { get; set; }
-
-            public List<T> changed { get; set; }
-
-            public List<T> deleted { get; set; }
-
-            public IDictionary<string, object> @params { get; set; }
-        }
 
         public IActionResult Privacy()
         {
